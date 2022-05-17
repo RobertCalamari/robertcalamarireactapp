@@ -1,0 +1,447 @@
+body{
+  background: #1f1f1f;
+  text-align: left;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Exo-Light";
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-repeat: no-repeat;
+}
+
+.left-content{
+  width: 55%;
+  max-width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.right-content{
+  width: 45%;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  animation-duration: 2s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+.right-img{
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto;
+  flex-shrink: 0;
+  opacity: 0.17;
+}
+
+.left-box{
+	max-height:382px;
+	height:382px;
+	width:87%;
+	padding-left:11%;
+	margin:0;
+	text-align: left;
+}
+
+.main-header{
+	font-size: 60px;
+	color: #00c3ff;
+	font-weight: bold;
+	font-family: Exo-Bold;
+	padding: 0 0 42px 0px;
+	cursor: default;
+
+	animation-duration: 0.5s;
+    transition-timing-function: ease-in;
+	animation-fill-mode: both;
+	animation-name: fadeInFromRightSmall;
+}
+
+.main-body{
+	padding-left: 32px;
+	font-family: "Open Sans", "sans-serif";
+	text-align: justify;
+	font-weight: 300;
+	line-height: 20px;
+
+	animation-duration: 1.2s;
+    transition-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	animation-name: fadeInFromRightSmall;
+}
+
+.shrink{
+	transition: all .2s ease-in-out;
+}
+
+.shrink:hover{
+	transform: scale(0.9);
+}
+
+/* Home Page */
+.left-box-frontpage {
+  max-height: 382px;
+  height: 382px;
+  width: 87%;
+  padding-left: 13%;
+  margin: 0;
+  text-align: left;
+}
+
+.first {
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeInFromRightSmall;
+}
+
+.second {
+  padding-left: 38px;
+  animation-duration: 1s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeInFromRightSmaller;
+}
+
+.main-title {
+  font-size: 60px;
+  margin: auto;
+  font-family: Exo-Bold;
+  line-height: 62px;
+  letter-spacing: 5px;
+}
+
+.main-subtitle {
+  font-size: 13px;
+  color: #8d8d8d;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin: auto;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeInFromBottomSmall;
+}
+
+.main-button {
+  color: #00c3ff;
+  margin: auto;
+    margin-top: auto;
+  height: 44px;
+  width: 160px;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-family: "Open Sans", sans-serif;
+  background-color: transparent;
+  background-color: #1f1f1f;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid #00c3ff;
+  margin-top: 25px;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeInFromBottomSmall;
+}
+
+.main-button:hover{	
+	background-color: #00c3ff;
+	color: #1f1f1f;
+	cursor: pointer;
+}
+
+/* About Page */
+
+
+
+.nonweb{
+	visibility: hidden;
+	display: none;
+}
+
+/* Contacts Page */
+
+.contact-box-img{
+	max-width: 110px;
+	max-height: 110px;
+	margin: 0;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 960px) {
+  body, html {
+    overflow-y: visible;
+  }
+
+  .container{
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .content{
+    
+    background-size: 600px auto;
+  }
+
+  .left-box-frontpage{
+		height:100%;
+		padding:90px 0 5px 0;
+		margin:auto;
+		text-align:center;
+	}
+
+  .second{
+		padding-left: 0;
+	}
+
+  .nonweb{
+		visibility: visible;
+		display: block;
+	}
+
+  .right-content{
+    display: none;
+  }
+
+  .left-content{
+    width:88%;
+    max-width: 100%;
+    text-align: justify;
+    display: block;
+    margin: auto;
+  }
+
+  .left-box{
+		height:100%;
+		max-height: 100%;
+		padding:58px 0 5px 0;
+		margin:auto;
+	}
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  .projects-body{
+    flex-direction: column;
+    justify-content: center;	
+  }
+
+  .project-button{
+    width: 97% !important;
+    height: auto !important;
+    margin: 0px 5px 30px 5px;
+    flex-shrink: 0;
+    padding: 25px 0px;
+  }
+
+  .websites-body{
+    flex-direction: row;
+    justify-content: center;	
+    padding-top: 20px;
+  }
+
+  .websites-button{
+    margin: 0px 5px 30px 5px;
+    flex-shrink: 0;
+    padding: 25px 0px;
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .apps-body{
+    flex-direction: column;
+    justify-content: center;	
+  }
+
+  .apps-button{
+    width: 97% !important;
+    height: auto !important;
+    margin: 0px 5px 30px 5px;
+    flex-shrink: 0;
+    padding: 25px 0px;
+  }
+
+  .about-body{
+    text-align: left;
+  }
+
+  .info-box-left{
+    width:100%;
+    height: auto;
+  }
+
+  .info-box-right{
+    width:100%;
+    height: auto;
+  }
+
+  .info-box-image{
+    padding-left: 0px;
+    padding-top: 30px;
+    padding-bottom: 88px;
+  }
+
+  .info-box{
+    height: auto;	
+  }
+
+  .info-box-continue{
+      bottom: 21px;
+      left: calc(50% - (100%/2));
+  }
+}
+
+
+
+
+/* Animations and Font */
+.rotate180{
+	animation-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	animation-name: rotate180;
+}
+
+@keyframes rotate180 {
+	0% {
+	  
+	}
+  
+	100% {
+	  transform: none;
+	  -ms-transform: rotate(180deg); /* IE 9 */
+	  transform: rotate(180deg);
+	}
+  } 
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+    }
+  
+    @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+    }
+
+    @keyframes fadeInFromRightSmall {
+      0% {
+        opacity: 0;
+        transform: translate3d(2%, 0, 0);
+        -ms-transform:translate3d(2%, 0, 0);
+      }
+      
+      100% {
+        opacity: 1;
+        transform: none;
+        -ms-transform:none;
+      }
+      } 
+    
+      @keyframes fadeInFromRightSmaller {
+      0% {
+        opacity: 0;
+        transform: translate3d(3%, 0, 0);
+        -ms-transform: translate3d(3%, 0, 0);
+      }
+      
+      100% {
+        opacity: 1;
+        transform: none;
+        -ms-transform:none;
+      }
+      } 
+    
+      @keyframes fadeInFromBottomSmall {
+      0% {
+        opacity: 0;
+        transform: translate3d(0, 15%, 0);
+        -ms-transform: translate3d(0, 15%, 0);
+      }
+      
+      100% {
+        opacity: 1;
+        transform: none;
+        -ms-transform: none;
+      }
+      } 
+    
+      @keyframes fadeInFromBottom {
+      0% {
+        opacity: 0;
+        -ms-transform: translate3d(0, 30%, 0);
+        transform: translate3d(0, 30%, 0);
+      }
+      
+      100% {
+        opacity: 1;
+        transform: none;
+        -ms-transform: none;
+      }
+      } 
+
+@font-face {
+	font-family: CODE-bold;
+	src: url(../css/fonts/CODE\ Bold.otf);
+}
+
+@font-face {
+	font-family: CODE-light;
+	src: url(../css/fonts/CODE\ Light.otf);
+}
+	
+@font-face {
+	font-family: Big-Noodle-Oblique;
+	src: url(../css/fonts/big_noodle_titling_oblique.ttf);
+}
+
+@font-face {
+	font-family: Big-Noodle;
+	src: url(../css/fonts/big_noodle_titling.ttf);
+}
+
+@font-face {
+	font-family: Evogria;
+	src: url(../css/fonts/Evogria.otf);
+}
+
+@font-face {
+	font-family: Exo-Bold;
+	src: url(../css/fonts/Exo-Bold.otf);
+}
+
+@font-face {
+	font-family: Exo-Light;
+	src: url(../css/fonts/Exo-Light.otf);
+}
+
