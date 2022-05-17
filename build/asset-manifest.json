@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da4086cc.css",
+    "main.js": "/static/js/main.58589c1b.js",
+    "static/media/mypic.png": "/static/media/mypic.e71b102c31a4ab0e77c3.png",
+    "static/media/splash.png": "/static/media/splash.b87154cc8ae23f08d0db.png",
+    "static/media/CalamariWhite.png": "/static/media/CalamariWhite.a7dcd5b211934dd26137.png",
+    "static/media/gmail.png": "/static/media/gmail.58a08eda4556a9e10156.png",
+    "static/media/github.png": "/static/media/github.3c18e27083fcbd6b2d77.png",
+    "static/media/Exo-Bold.otf": "/static/media/Exo-Bold.2a2f92be269e727b37f3.otf",
+    "static/media/Exo-Light.otf": "/static/media/Exo-Light.4cc3c0816f37acdf2605.otf",
+    "static/media/Evogria.otf": "/static/media/Evogria.f90e5f33987b13d9c840.otf",
+    "static/media/hammenu.png": "/static/media/hammenu.0a8d44089822fa2ff23f.png",
+    "static/media/big_noodle_titling_oblique.ttf": "/static/media/big_noodle_titling_oblique.a54ee5b6b0c512c89e35.ttf",
+    "static/media/big_noodle_titling.ttf": "/static/media/big_noodle_titling.e2ebffa44fbb63381589.ttf",
+    "static/media/CODE Bold.otf": "/static/media/CODE Bold.2ade8685d0e7475fd8a9.otf",
+    "static/media/CODE Light.otf": "/static/media/CODE Light.1efa185f79586f80d777.otf",
+    "index.html": "/index.html",
+    "main.da4086cc.css.map": "/static/css/main.da4086cc.css.map",
+    "main.58589c1b.js.map": "/static/js/main.58589c1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da4086cc.css",
+    "static/js/main.58589c1b.js"
+  ]
+}
