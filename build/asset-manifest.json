@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.da4086cc.css",
-    "main.js": "/static/js/main.58589c1b.js",
+    "main.js": "/static/js/main.03c8fea9.js",
     "static/media/mypic.png": "/static/media/mypic.e71b102c31a4ab0e77c3.png",
     "static/media/splash.png": "/static/media/splash.b87154cc8ae23f08d0db.png",
     "static/media/CalamariWhite.png": "/static/media/CalamariWhite.a7dcd5b211934dd26137.png",
@@ -17,10 +17,10 @@
     "static/media/CODE Light.otf": "/static/media/CODE Light.1efa185f79586f80d777.otf",
     "index.html": "/index.html",
     "main.da4086cc.css.map": "/static/css/main.da4086cc.css.map",
-    "main.58589c1b.js.map": "/static/js/main.58589c1b.js.map"
+    "main.03c8fea9.js.map": "/static/js/main.03c8fea9.js.map"
   },
   "entrypoints": [
     "static/css/main.da4086cc.css",
-    "static/js/main.58589c1b.js"
+    "static/js/main.03c8fea9.js"
   ]
 }

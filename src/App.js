@@ -6,12 +6,11 @@ import About from './About';
 import Projects from './Projects';
 import Art from './Art';
 import {Route, Routes} from "react-router-dom";
-import Users from './User';
 
 function App() {
   return (
         <>
-        <Users />
+        {/* <Users /> */}
     
         <Routes>
           <Route path="/" element={<Home  />} />
