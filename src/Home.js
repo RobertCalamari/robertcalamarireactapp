@@ -1,13 +1,18 @@
 import React from "react";
-import RightContent from "./RightContent";
+import RightContent from "./components/RightContent";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
 import splashImage from "./img/splash.png";
 
-function Home() {
+function Home(props) {
+
+    React.useEffect(() => {
+          document.title = props.title; // eslint-disable-next-line
+      }, []); 
+      
     return (
         <div className="container">
-            <Navbar pageColor={1} />
+            <Navbar />
             <div className="content" style={{backgroundImage: 'url('+splashImage+')'}}>
                 <div className="left-content">
                     <div className="left-box-frontpage">

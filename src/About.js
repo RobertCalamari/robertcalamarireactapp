@@ -1,13 +1,18 @@
 import React from "react";
-import RightContent from "./RightContent";
+import RightContent from "./components/RightContent";
 import MyPic from './img/mypic.png';
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
 import splashImage from "./img/splash.png";
 
-function About() {
+function About(props) {
+
+    React.useEffect(() => {
+          document.title = props.title; // eslint-disable-next-line
+      }, []); 
+      
     return (
         <div className="container">
-            <Navbar pageColor={2} />
+            <Navbar />
             <div className="content" style={{backgroundImage: 'url('+splashImage+')'}}>
                 <div className="left-content">
                     <div className="left-box">
@@ -31,7 +36,5 @@ function About() {
         </div>
       );
 }
-
-// document.getElementsByClassName("nav-icon")[2].classList.add("activePage");
 
 export default About;

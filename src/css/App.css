@@ -71,7 +71,7 @@ body{
 	cursor: default;
 
 	animation-duration: 0.5s;
-    transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 	animation-fill-mode: both;
 	animation-name: fadeInFromRightSmall;
 }
@@ -237,6 +237,18 @@ body{
 		margin:auto;
 	}
 
+  .main-body{
+    padding-left: 0;
+  }
+
+  .main-space-even{
+    flex-direction: column;
+    align-items: center;
+    height: 401px;
+    justify-content: space-evenly;
+    width: unset !important;
+  }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -309,6 +321,11 @@ body{
       bottom: 21px;
       left: calc(50% - (100%/2));
   }
+  
+  .content{
+    height: fit-content;
+    margin-bottom: 125px;
+}
 }
 
 

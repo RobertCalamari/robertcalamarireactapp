@@ -1,0 +1,373 @@
+.top-controls{
+    width: 100%;
+    background-color: aqua;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.paintings-holder{
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+    left:0px;
+}
+
+.img-holder{
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+    left:0px;
+
+    transition: transform 330ms ease-in-out;
+}
+
+.painting-img{
+    flex-shrink: 0;
+}
+
+.img-background{
+    background-color: #181818;
+    position: relative;
+}
+
+.no-opacity{
+    opacity: 0;
+}
+
+.img-background:hover{
+    cursor: pointer;
+}
+
+.img-background:hover > .paintingsold { display: block; }
+.img-background:hover > .painting-img { opacity: 0.6; }
+
+.paintingsold{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: none;
+    z-index:2;
+}
+
+
+.painting-scroll{
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    font-size: 40px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    z-index: 6;
+    background-color: rgba(0, 0, 0, 0.46);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.81);
+}
+
+.painting-scroll:hover{
+    background-color: rgba(0, 154, 192, 0.5);
+    box-shadow: 0 0 25px rgba(0, 154, 192, 0.91);
+    cursor: pointer;
+}
+
+.scroll-right{
+    right: 0; 
+}
+
+.scroll-left{
+    left: 0;
+    display:none;
+}
+
+.paintings-page{
+	position: absolute;
+	top: calc(50% - (75%/2));
+	left: calc(50% - 940px/2);
+	border: 1px var(--mainColor) solid;
+	max-height: 75%;
+	background-color: #212121;
+	display: block;
+	z-index: 10;
+	border-radius: 3px;
+	width: 940px;
+	height: 530px;
+	min-height: 400px;
+}
+
+.paintings-page-container{
+	position: relative;
+	width: 95%;
+	height: 92%;
+	font-family: "Exo-Light";
+	margin: auto;
+	margin-top: 25px;
+    text-align: left;
+
+}
+
+.grey-out-area{
+	position: fixed;
+	width: 125%;
+	height: 100%;
+	background-color: #0000008c;
+	top: 0;
+	left: -68px;
+	display: none;
+	z-index: 7;
+}
+
+.paintings-page-header{
+	font-size: 40px;
+	padding-top: 25px;
+	line-height: 40px;
+	flex-shrink: 0;
+    width:100%;
+    font-family: "Exo-Bold";
+    padding-bottom: 5px;
+}
+
+.paintings-page-close{
+	position: absolute;
+	top:-14px;
+	right:-13px;
+	font-size: 40px;
+}
+
+.paintings-page-close:hover{
+	color: #00c3ff;
+	cursor: pointer;
+}
+
+.paintings-page-description{
+	padding-left: 28px;
+}
+
+.paintings-page-image{
+    margin: auto;
+    flex-shrink: 0;
+    
+}
+
+.paintings-page-continue{
+    bottom: 14px;
+    right: 442px;
+    display: inline-block;
+    margin: 0;
+}
+
+.paintings-page-left{
+	width: 53%;
+	height: 83%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.paintings-page-right{
+	width: 405px;
+	height: 405px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.paintings-page-left-bottom{
+    padding-top: 281px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+}
+
+.paintings-page-price{
+    bottom: 24px;
+    left: 30px;
+    font-size: 29px;
+    display: inline-block;
+    padding-right: 11px;
+}
+
+.paintings-page-artist{
+    top: 81px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    
+}
+
+.paintings-page-material{
+    top: 110px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    left: 47px;
+}
+
+.paintings-page-size{
+    top: 135px;
+    font-size: 16px;
+    left: 47px;
+}
+
+.back-next-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .img-background{
+    animation-duration: 0.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: imgFadeIn;
+}
+
+
+
+@keyframes imgFadeIn {
+    0% {
+      opacity: 0;
+      transform: translate3d(2%, 0, 0);
+      -ms-transform:translate3d(2%, 0, 0);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: none;
+      -ms-transform:none;
+    }
+}  */
+
+
+@media only screen and (max-width: 960px) {
+
+    .container{
+        height: 100vh !important;
+    }
+
+    .painting-scroll {
+        display: none;
+    }
+
+    .img-holder{
+        flex-direction:row;
+    }
+
+    .paintings-page-description{
+        padding-top: 1px;
+    }
+
+    .img-background{
+        padding: 18px;
+        margin: auto;
+        background-color: #18181800;
+    }
+
+    .paintings-page{
+        left: 2%;
+        max-width: 95%;
+        max-height: 89%;
+        top: calc(57% - (95%/2));
+        height: 775px;
+        position: fixed;
+    }
+
+    .paintings-page-right{
+        padding-left:0;
+        padding-bottom: 79px;
+        padding-top: 41px;
+        width: 100%;
+        height: auto;
+    }
+
+    .paintings-page-left{
+        width: 100%;
+        height: 7%;
+    }
+
+    .paintings-page-continue{
+        position: absolute;
+        bottom: -3px;
+        right: 1px;
+    }
+
+    .paintings-page-header{
+        font-size: 30px;
+        padding-top:0px;
+        width: 91%;
+        line-height: 26px;
+    }
+
+    .paintings-page-price{
+        position: absolute;
+        bottom: 7px;
+        right: 1px;
+    }
+
+    .paintings-page-artist{
+        top: 69px;
+        font-size: 12px;
+        padding-bottom: 0px;
+    }
+
+    .paintings-page-material{
+        padding-bottom: 0px;
+        font-size: 12px;
+    }
+
+    .paintings-page-img-container{
+        margin:auto;
+        border: none;
+        width: 78% !important;
+        height: 78% !important;
+        margin-top: 0px;
+        max-height: 500px;
+        max-width: 500px;
+    }
+
+    .paintings-page-size{
+        padding-bottom: 341px !important;
+        font-size: 12px;
+    }
+
+    .paintings-page-close{
+        top:-11px;
+        right:-4px;
+    }
+
+    .back-next-buttons{
+        padding-top: 23px;
+    }
+
+    .paintingssold{
+        top: 26px;
+        left: 26px;
+    }
+
+    .img-background:hover > .paintingsold { display: none; }
+
+}
+
+@media only screen and (max-width: 550px) {
+    .paintings-page-image{
+        max-height: 271px;
+        max-width: 271px;
+    }
+
+    .paintings-page{
+        height: 496px;
+    }
+
+    .paintings-page-header{
+        font-size: 21px;
+    }
+
+    .back-next-buttons{
+        padding-top: 0px;
+    }
+}
