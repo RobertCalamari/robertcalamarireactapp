@@ -57,7 +57,7 @@
 
 .nav-text{
 	position: absolute;
-	/* color: #00c3ff; */
+	color: #00c3ff !important;
 	top:50%;
 	margin-top: -35px;
 	left:0;

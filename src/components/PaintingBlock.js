@@ -1,5 +1,6 @@
 import '../css/Paintings.css';
 
+
 function PaintingBlock({painting, setPaintingsPageVisible, setPaintingToSend}) {
 
     var imgsizewidth = 150;
