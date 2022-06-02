@@ -74,7 +74,7 @@ function Art(props) {
         if (isMount) {
         } else {
             
-            paintingsPageVisible === 'block' ? console.log(paintingsPageVisible) : closePaintingsPageBox();
+            paintingsPageVisible === 'block' ? console.log('isVisible') : closePaintingsPageBox();
         }
         // eslint-disable-next-line
     }, [paintingsPageVisible]); 

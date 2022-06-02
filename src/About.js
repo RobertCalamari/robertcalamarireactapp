@@ -19,11 +19,11 @@ function About(props) {
                         <div className="main-header">About Me</div>
                         <div className="main-body">
                             <div className="about-body">
-                                I received a Bachelor of Science degree in Information Technology and a minor in Computer Science in 2018, and have been working in the web development industry ever since. 
+                                I received a Bachelor of Science degree in Information Technology and a minor in Computer Science in 2018, and have been working in the web development industry for 4 years. 
                                 <br /><br />
-                                I am an organized person, problem solver, and like to take on ambitious projects. I prefer to focus more on frontend applications, but know a fair amount of the backend as well. I am well versed in <b>JavaScript, HTML5, CSS3, Node.JS, MongoDB, Git, and Adobe Products (Photoshop, After Effects, Premiere)</b>. I have also worked with <b>WordPress, React, XML, PHP, Express, and Socket.io</b>.
+                                I am an organized person, problem solver, and like to take on ambitious projects. I prefer to focus more on frontend applications, but know a fair amount of backend applications as well. I am well versed in <div style={{display: 'inline', color: '#00c3ff'}}>JavaScript, ReactJS, Node.JS, HTML5, CSS, MySQL, Git, and Adobe Products (Photoshop, After Effects, Premiere)</div>, but have also had experience with <div style={{display: 'inline', color: '#00c3ff'}}>WordPress snd Storyline</div>.
                                 <br /><br />
-                                Along with coding, I have always been interested in painting, strategy/online games, and woodworking. 
+                                Along with coding, I have always been interested in painting, strategy/online games, and making films. 
 
                                 <img className="right-img nonweb" alt="Me" src={MyPic} style={{opacity: 1, paddingTop: '25px', width: '100%'}} />
                                 

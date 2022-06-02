@@ -70,14 +70,16 @@ function goTo(where){
                     <div className="paintings-page-header">{painting.name}</div>
                     <div className="paintings-page-left">
                         <div className="paintings-page-description">
-                            <div className="paintings-page-artist">By {painting.artist} - {painting.date}</div>
-                            <div className="paintings-page-material">{painting.material}</div>
-                            <div className="paintings-page-size">{painting.size}in</div>
+                            <div>
+                                <div className="paintings-page-artist">By {painting.artist} - {painting.date}</div>
+                                <div className="paintings-page-material">{painting.material}</div>
+                                <div className="paintings-page-size">{painting.size}in</div>
+
+                            </div>
                             <div className="paintings-page-left-bottom">
                                 <div className="paintings-page-price">${painting.price}</div>
                                 <button className='main-button paintings-page-continue' style={canClickStyle} onClick={canClickClick} >{purchaseText}</button>
                             </div>
-                            <br />
                         </div>
                         
                     </div>

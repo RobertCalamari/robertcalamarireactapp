@@ -147,6 +147,10 @@
 
 .paintings-page-description{
 	padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .paintings-page-image{
@@ -164,14 +168,14 @@
 
 .paintings-page-left{
 	width: 53%;
-	height: 83%;
+	height: 81%;
 	display: inline-block;
 	vertical-align: bottom;
 }
 
 .paintings-page-right{
-	width: 405px;
-	height: 405px;
+	width: 43%;
+    height: 81%;
     text-align: center;
     display: inline-block;
     vertical-align: bottom;
@@ -179,7 +183,7 @@
 }
 
 .paintings-page-left-bottom{
-    padding-top: 281px;
+    /* padding-top: 281px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -315,6 +319,11 @@
         padding-bottom: 0px;
     }
 
+    .paintings-page-image{
+        max-height: 491px;
+        max-width: 491px;
+    }
+
     .paintings-page-material{
         padding-bottom: 0px;
         font-size: 12px;
@@ -347,6 +356,10 @@
     .paintingssold{
         top: 26px;
         left: 26px;
+    }
+
+    .paintings-page-left-bottom{
+        padding-top: 0;
     }
 
     .img-background:hover > .paintingsold { display: none; }
