@@ -1,5 +1,6 @@
 import React from "react";
 import CalamariWhite from '../img/CalamariWhite.png';
+import CalamariPurpBlueWhite from '../img/CalamariPurpBlueWhite.png';
 import MyPic from '../img/mypic.png';
 
 function RightContent(props) {
