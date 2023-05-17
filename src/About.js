@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import splashImage from "./img/splash.png";
 
 function About(props) {
-
+ 
     React.useEffect(() => {
           document.title = props.title; // eslint-disable-next-line
       }, []); 
@@ -24,7 +24,9 @@ function About(props) {
                                 I am an organized person, problem solver, and like to take on ambitious projects. I prefer to focus more on frontend applications, but know a fair amount of backend applications as well. I am well versed in <div style={{display: 'inline', color: '#00c3ff'}}>JavaScript, ReactJS, Node.JS, HTML5, CSS, MySQL, Git, and Adobe Products (Photoshop, After Effects, Premiere)</div>, but have also had experience with <div style={{display: 'inline', color: '#00c3ff'}}>WordPress snd Storyline</div>.
                                 <br /><br />
                                 Along with coding, I have always been interested in painting, strategy/online games, and making films. 
-
+                                
+                                
+                                            
                                 <img className="right-img nonweb" alt="Me" src={MyPic} style={{opacity: 1, paddingTop: '25px', width: '100%'}} />
                                 
                             </div>

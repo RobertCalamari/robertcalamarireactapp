@@ -37,11 +37,18 @@ function Art(props) {
 
     //initial run  one time only
     useEffect(() => {
-        fetch('https://robertcalamari-reactapp.herokuapp.com/api/paintings') //get api
+        fetch('../../js/paintings.json') 
           .then(results => results.json())
           .then(data => {
-            setPaintings(data.reverse());
+            console.log(data);
+            setPaintings(data);
           });
+        //   fetch('https://robertcalamari-reactapp.herokuapp.com/api/paintings')
+        //   .then(results => results.json())
+        //   .then(data => {
+        //     console.log(data);
+        //     setPaintings(data.reverse());
+        //   });
           document.title = props.title; //change title
           setImgHolderSize(document.getElementsByClassName("content")[0].getBoundingClientRect().height/5); //declare what size each image is
           window.innerWidth < 960 ? setContentWidth('100%') : setContentWidth(document.getElementsByClassName("content")[0].getBoundingClientRect().width + 'px'); //declare what content width is
@@ -199,7 +206,7 @@ function Art(props) {
 
 
     return (
-        <div className="container">
+        <div className="container hideoverflow" style={{height:'100vh'}}>
             <Navbar />
             <div className="content" style={{backgroundImage: 'url('+splashImage+')', flexDirection: 'column', width: contentWidth}}>
                 <div className="paintings-page" style={{display: paintingsPageVisible}}>
