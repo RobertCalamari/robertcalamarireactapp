@@ -1,5 +1,5 @@
 
-You can access a live demo of this at https://reactapp-robertcalamari.herokuapp.com/
+You can access this site at robertcalamari.com
 
 # Getting Started with Create React App
 
