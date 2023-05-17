@@ -1,42 +1,52 @@
+:root {
+--main-color: #00c3ff;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background: #1f1f1f;
   text-align: left;
   color: #fff;
   font-size: 15px;
-  font-family: "Exo-Light";
+  font-family: SFU-UI-Light;
   font-weight: 300;
   line-height: 20px;
   margin: 0;
   text-align: center;
   overflow-x: hidden;
-  overflow-y: hidden;
+
 }
 
 .container{
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
 }
 
 .content{
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   background-repeat: no-repeat;
+  background-image: 'url('+splashImage+')';
 }
 
 .left-content{
   width: 55%;
   max-width: 55%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   justify-content: center;
   flex-direction: column;
-  min-height: 400px;
+  /* min-height: 400px; */
 }
 
 .right-content{
   width: 45%;
   max-width: 45%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   animation-duration: 2s;
@@ -54,21 +64,23 @@ body{
 }
 
 .left-box{
-	max-height:382px;
-	height:382px;
+	/* max-height:382px; */
+	/* height:382px; */
 	width:87%;
 	padding-left:11%;
+  padding-top: 30px;
 	margin:0;
 	text-align: left;
 }
 
 .main-header{
 	font-size: 60px;
-	color: #00c3ff;
+	color: var(--main-color);
 	font-weight: bold;
-	font-family: Exo-Bold;
+	font-family: SFU-UI-Bold;
 	padding: 0 0 42px 0px;
 	cursor: default;
+  line-height: 1;
 
 	animation-duration: 0.5s;
   transition-timing-function: ease-in;
@@ -78,15 +90,20 @@ body{
 
 .main-body{
 	padding-left: 32px;
-	font-family: "Open Sans", "sans-serif";
+	font-family: SFU-UI-Light;
 	text-align: justify;
 	font-weight: 300;
-	line-height: 20px;
+	line-height: 1.2;
 
 	animation-duration: 1.2s;
     transition-timing-function: ease-in-out;
 	animation-fill-mode: both;
 	animation-name: fadeInFromRightSmall;
+}
+
+.hideoverflow{
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .shrink{
@@ -107,6 +124,84 @@ body{
   text-align: left;
 }
 
+.home-box{
+  width: 90%;
+  background: #1f1f1f;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.contact-form-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form-text{
+  color: white;
+  font-size: 15px;
+  padding: 12px 20px 12px 0px;
+}
+
+.contact-form-upper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 43px;
+}
+.contact-form-lower{
+  width: 100%;
+}
+
+.contact-form-header{
+  text-align: center;
+  font-family: SFU-UI-Bold;
+  font-size: 46px;
+  color: var(--main-color);
+  line-height: 42px;
+}
+
+.contact-form-subheader{
+  text-align: center;
+  font-family: SFU-UI-Light;
+  font-size: 16px;
+  color: rgb(212, 212, 212);
+  max-width: 548px;
+  margin-bottom: 55px;
+}
+
+.contact-form-email{
+  background: none;
+  border: none;
+  border-bottom: 1px var(--main-color) solid;
+  width: 100%;
+}
+
+.contact-form-email:focus,
+.contact-form-message:focus {
+  outline: none;
+}
+
+.contact-form-block{
+  width: 100%;
+  max-width: 256px;
+  margin-right: 24px;
+}
+
+.contact-form-message{
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  resize: none;
+  background: none;
+  border: none;
+  border-bottom: 1px var(--main-color) solid;
+}
+
 .first {
   animation-duration: 0.5s;
   transition-timing-function: ease-in;
@@ -122,55 +217,267 @@ body{
   animation-name: fadeInFromRightSmaller;
 }
 
-.main-title {
+.home-title {
   font-size: 60px;
-  margin: auto;
-  font-family: Exo-Bold;
-  line-height: 62px;
-  letter-spacing: 5px;
+  font-family: SFU-UI-Bold;
+  text-align: left;
+  line-height: 1;
+  animation-delay: 0.5s;
 }
 
-.main-subtitle {
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-box-sub{
+  width: 50%;
+  height: 100%;
+}
+
+.hbox-one{
+  max-height: 665px;
+}
+
+.hbox-two{
+  max-height: 665px;
+}
+
+.home-main-img{
+  animation-delay: 2.5s;
+  border-radius: 8px;
+}
+
+.home-subtitle {
   font-size: 13px;
   color: #8d8d8d;
   letter-spacing: 4px;
   font-weight: bold;
-  margin: auto;
-  animation-duration: 0.5s;
+  margin: 30px 0;
+  animation-delay: 1s;
+}
+
+.home-description{
+  width: 90%;
+  animation-delay: 1.5s;
+}
+
+.home-img-square{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 3px solid var(--main-color);
+  position: absolute;
+  top:0;
+  left:0;
+  transform: translate(20px,15px);
+  transition-duration: 250ms;
+}
+
+.home-main-img-container:hover > .home-img-square { transform: translate(13px,8px); }
+
+.intro-fade-in{
+  animation-duration: 1s;
   transition-timing-function: ease-in;
   animation-fill-mode: both;
   animation-name: fadeInFromBottomSmall;
 }
 
+.intro-fade-in-right{
+  animation-duration: 1s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeInFromRightSmall;
+}
+
 .main-button {
-  color: #00c3ff;
+  color: var(--main-color);
   margin: auto;
     margin-top: auto;
   height: 44px;
   width: 160px;
   font-size: 13px;
   letter-spacing: 4px;
-  font-family: "Open Sans", sans-serif;
+  font-family: SFU-UI-Light;
   background-color: transparent;
   background-color: #1f1f1f;
   text-decoration: none;
   padding: 10px 18px;
-  border: 1px solid #00c3ff;
+  border: 1px solid var(--main-color);
   margin-top: 25px;
-  animation-duration: 0.5s;
-  transition-timing-function: ease-in;
-  animation-fill-mode: both;
-  animation-name: fadeInFromBottomSmall;
+  animation-delay: 2s;
 }
 
 .main-button:hover{	
-	background-color: #00c3ff;
+	background-color: var(--main-color);
+	color: #1f1f1f;
+	cursor: pointer;
+}
+
+.move-me-main-button{
+  color: var(--main-color);
+  height: 44px;
+  width: 160px;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-family: SFU-UI-Light;
+  background-color: transparent;
+  background-color: #1f1f1f;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid var(--main-color);
+  position: fixed;
+
+  transition-duration: 450ms;
+}
+
+.moveToCornerRight{
+  left: 95% !important;
+  top: 87% !important;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+
+  transition-duration: 450ms;
+  transition-property: visibility, left, top, height, width, border-radius, font-size;
+}
+
+.move-me-main-button:hover{	
+	background-color: var(--main-color);
 	color: #1f1f1f;
 	cursor: pointer;
 }
 
 /* About Page */
+.aboutme-form-container{
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+}
 
+.aboutme-form-header-line{
+  border-bottom: 1px #1966aab3 solid;
+  display: inline-block;
+  width: 47%;
+  margin-bottom: 7px;
+}
+
+.aboutme-form-header-text{
+  font-size: 29px;
+  text-align: left;
+  font-family: SFU-UI-Regular;
+  width: 162px;
+  display: inline-block;
+  margin-left: -140px;
+}
+
+.aboutme-form-content{
+  height: 280px;
+  width: 100%;
+  display: flex;
+  margin-top: 43px;
+  position: relative;
+  font-family: SF-Mono-Light;
+  color: #d5d5d5;
+}
+
+.aboutme-form-options{
+  width: 171px;
+  text-align: left;
+  border-left: #0b4273b3 solid 3px;
+}
+
+.aboutme-form-selections{
+  padding: 18px;
+}
+
+.aboutme-form-selections:hover{
+  cursor: pointer;
+  background-color:#0b4273b3;
+  color: var(--main-color);
+}
+
+.aboutme-form-scroller{
+  height: 56px;
+  position: absolute;
+  border-left: var(--main-color) solid 3px;
+  top: 0;
+  left: 0;
+  transition-duration: 250ms;
+}
+
+.aboutme-form-scroller-horizontal{
+  width: 131px;
+  height: 50px;
+  position: absolute;
+  z-index: 5;
+  border-bottom: var(--main-color) solid 3px;
+  top: -3px;
+  left: 0;
+  transition-duration: 250ms;
+  display: none;
+}
+
+.aboutme-form-main-header{
+  font-size: 22px;
+  font-family: SFU-UI-Regular;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+
+.aboutme-form-main-choice{
+  display: none;
+  list-style: none;
+  font-size: 13px;
+}
+
+.two-rows{
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.second-row-bullet{
+  padding-top: 8;
+}
+
+.aboutme-form-main-choice li{
+  margin: 8px 0px 8px 19px;
+  line-height: 19px;
+  font-size: 15px;
+  position: relative;
+}
+
+.aboutme-form-main-choice li::before{
+  content: '▹';
+  color: var(--main-color);
+  position: absolute;
+  left: -22px;
+}
+
+.selectedabouttab{
+  background-color:#0b4273b3;
+  color: var(--main-color);
+}
+
+/* .selectedabouttab::before{
+  content:'';
+  height: 56px;
+  transform: translate(-21px,-18px);
+  position: absolute;
+  border-left: var(--main-color) solid 3px;
+} */
+
+.aboutme-form-main{
+  margin-left: 30px;
+  width: 69%;
+  text-align: left;
+}
 
 
 .nonweb{
@@ -199,6 +506,10 @@ body{
 
 @media only screen and (max-width: 960px) {
   body, html {
+    overflow-y: visible;
+  }
+
+  .hideoverflow{
     overflow-y: visible;
   }
 
@@ -257,6 +568,27 @@ body{
     height: 401px;
     justify-content: space-evenly;
     width: unset !important;
+  }
+
+  .contact-form-upper{
+    flex-direction: column;
+    margin-bottom: 2px;
+  }
+
+  .contact-form-block{
+    margin-bottom: 28px;
+  }
+
+  .contact-form-header{
+    font-size: 36px;
+  }
+
+  .hbox-one{
+    height: 85vh;
+  }
+
+  .hbox-two{
+    height: 85vh;
   }
 
 }
@@ -335,7 +667,95 @@ body{
   .content{
     height: fit-content;
     margin-bottom: 125px;
-}
+  }
+
+  .home-box{
+    display: block;
+  }
+
+  .home-box-sub{
+    width: 100%;
+    height: auto;
+    padding: 37px 0 10px 0;
+  }
+  .home-main-img{
+    max-width: 200px !important;
+    max-height: 200px !important;
+  }
+
+  .home-img-square{
+    border: 2px solid var(--main-color);
+    transform: translate(17px,12px);
+  }
+
+  .aboutme-form-scroller{
+    display: none;
+  }
+
+  .aboutme-form-content{
+    flex-direction: column;
+    margin-top: 32px;
+  }
+
+  .aboutme-form-options{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    overflow-x: auto;
+    border-bottom: #0b4273b3 solid 2px;
+    border-left: none;
+    white-space: nowrap;
+  }
+
+  .aboutme-form-header-text{
+    margin-left: 0;
+  }
+
+  .aboutme-form-main{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .aboutme-form-header-text{
+    margin-top: 30px;
+    width: 146px;
+  }
+
+  .aboutme-form-selections{
+    padding: 4px 18px 4px 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 42px;
+    font-size: 13px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .aboutme-form-main-header{
+    margin-top: 87px;
+  }
+
+  .hbox-two{
+    height: 83vh;
+  }
+
+  .second-row-bullet{
+    padding-top: 0;
+  }
+
+  .two-rows{
+    columns: 1;
+  }
+
+  .aboutme-form-scroller-horizontal{
+    display: block;
+  }
+
+  
 }
 
 
@@ -359,7 +779,7 @@ body{
 	  -ms-transform: rotate(180deg); /* IE 9 */
 	  transform: rotate(180deg);
 	}
-  } 
+} 
 
   @keyframes fadeIn {
     0% {
@@ -380,6 +800,7 @@ body{
       opacity: 0;
     }
     }
+    
 
     @keyframes fadeInFromRightSmall {
       0% {
@@ -470,5 +891,35 @@ body{
 @font-face {
 	font-family: Exo-Light;
 	src: url(../css/fonts/Exo-Light.otf);
+}
+
+@font-face {
+	font-family: SFU-UI-Regular;
+	src: url(../css/fonts/SFUIText-Regular.woff);
+}
+
+@font-face {
+	font-family: SFU-UI-Bold;
+	src: url(../css/fonts/SFUIText-Bold.woff);
+}
+
+@font-face {
+	font-family: SFU-UI-Light;
+	src: url(../css/fonts/SFUIText-Light.woff);
+}
+
+@font-face {
+	font-family: SF-Mono-Regular;
+	src: url(../css/fonts/SFMonoRegular.woff);
+}
+
+@font-face {
+	font-family: SF-Mono-Light;
+	src: url(../css/fonts/SFMonoLight.woff);
+}
+
+@font-face {
+	font-family: SF-Mono-Bold;
+	src: url(../css/fonts/SFMonoBold.woff);
 }
 

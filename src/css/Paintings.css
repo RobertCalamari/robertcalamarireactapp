@@ -88,17 +88,18 @@
 
 .paintings-page{
 	position: absolute;
-	top: calc(50% - (75%/2));
-	left: calc(50% - 940px/2);
-	border: 1px var(--mainColor) solid;
-	max-height: 75%;
-	background-color: #212121;
-	display: block;
-	z-index: 10;
-	border-radius: 3px;
-	width: 940px;
-	height: 530px;
-	min-height: 400px;
+    border: 1px var(--mainColor) solid;
+    background-color: #212121;
+    display: block;
+    z-index: 55;
+    border-radius: 3px;
+    width: 90%;
+    height: 80%;
+    max-width: 1100px;
+    max-height: 501px;
+    transform: translate(-50%, -56%);
+    top: 50%;
+    left: 50%;
 }
 
 .paintings-page-container{
@@ -141,7 +142,7 @@
 }
 
 .paintings-page-close:hover{
-	color: #00c3ff;
+	color: var(--main-color);
 	cursor: pointer;
 }
 
@@ -167,14 +168,14 @@
 }
 
 .paintings-page-left{
-	width: 53%;
+	width: 58%;
 	height: 81%;
 	display: inline-block;
 	vertical-align: bottom;
 }
 
 .paintings-page-right{
-	width: 43%;
+	width: 36%;
     height: 81%;
     text-align: center;
     display: inline-block;
@@ -273,11 +274,6 @@
     }
 
     .paintings-page{
-        left: 2%;
-        max-width: 95%;
-        max-height: 89%;
-        top: calc(57% - (95%/2));
-        height: 775px;
         position: fixed;
     }
 
@@ -373,7 +369,7 @@
     }
 
     .paintings-page{
-        height: 496px;
+        max-height: 506px;
     }
 
     .paintings-page-header{
@@ -383,4 +379,10 @@
     .back-next-buttons{
         padding-top: 0px;
     }
+
+    .img-background:hover{
+        cursor: pointer;
+    }
+    
+    .img-background:hover > .painting-img { opacity: 1; }
 }

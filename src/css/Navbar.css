@@ -5,6 +5,13 @@
     flex-direction: column;
     background-color: #181818;
     z-index: 50;
+	position:fixed;
+	height: 100vh;
+}
+
+.fakeheader{
+    width: 68px;
+	height: 100vh;
 }
 
 .icon{
@@ -20,6 +27,7 @@
 	position: relative;
 	cursor: default;
 	background-color: transparent;
+	display: none;
 }
 
 .mobileonly{
@@ -57,7 +65,7 @@
 
 .nav-text{
 	position: absolute;
-	color: #00c3ff !important;
+	color: var(--main-color) !important;
 	top:50%;
 	margin-top: -35px;
 	left:0;
@@ -73,10 +81,26 @@
     width: 68px;
     font-size: 9px;
     padding: 5px 0 5px 0;
-    color: #00c3ff;
+    color: var(--main-color);
     letter-spacing: 2px;
     font-weight: bold;
     position: relative;
+
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.navlinks{
+	display: none;
+}
+
+.navmain{
+	display: flex;
 }
 
 .widthzero{
@@ -109,6 +133,12 @@
 		text-align: center;
 		display: flex;
 		flex-direction: row;
+		position: relative;
+	}
+
+	.fakeheader {
+		width: 0;
+		height: 0;
 	}
 
 	.navbar{
@@ -137,6 +167,10 @@
 	.header{
 		justify-content: space-between;
 		position: relative;
+	}
+
+	.menubutton{
+		display: flex;
 	}
 
 	.navbar{
@@ -169,8 +203,13 @@
 		display: block;
 	}
 
+	.navbar-menu{
+		display: block;
+	}
+
 	.main-header{
-		font-size: 44px;
+		font-size: 36px;
+		text-align: center;
 	}
 
 	.mobileonly{

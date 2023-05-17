@@ -1,0 +1,400 @@
+.App-2048{
+  width: 100%;
+  height: 95%;
+  text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+/* #root{
+  width: 100%;
+  height: 100vh;
+} */
+
+.boards-container-2048{
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.board-2048{
+  background-color: #705a40;
+  width: 90vw;
+  height: 90vw;
+  max-width: 403px;
+  max-height: 403px;
+  aspect-ratio: 1;
+  margin: 10px 0 10px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 9px;
+  gap: 10px;
+  touch-action: none;
+}
+
+.square-2048{
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+  touch-action: none;
+  max-width: 91px;
+  max-height: 91px;
+  width: 20vw;
+  height: 20vw;
+}
+
+.number-square-2048{
+  background-color: rgb(80, 103, 138);
+}
+
+.plain-square-2048{
+  background-color: rgb(165, 130, 98);
+}
+
+.color-one-2048{
+  background-color: rgb(80, 103, 138);
+}
+
+.color-two-2048{
+  background-color: rgb(80, 138, 128);
+}
+
+.color-three-2048{
+  background-color: rgb(80, 138, 104);
+}
+
+.color-four-2048{
+  background-color: rgb(87, 138, 80);
+}
+
+.color-five-2048{
+  background-color: rgb(113, 138, 80);
+}
+
+.color-six-2048{
+  background-color: rgb(138, 134, 80);
+}
+
+.color-seven-2048{
+  background-color: rgb(160, 123, 76);
+}
+
+.color-eight-2048{
+  background-color: rgb(160, 86, 76);
+}
+
+.color-nine-2048{
+  background-color: rgb(160, 76, 125);
+}
+
+.color-ten-2048{
+  background-color: rgb(140, 76, 160);
+}
+
+.color-eleven-2048{
+  background-color: rgb(156, 136, 212);
+}
+
+.visible-2048{
+  display: flex;
+}
+
+.invisible-2048{
+  display: none;
+}
+
+.blank-2048{
+  background-color: transparent;
+  position: absolute;
+}
+
+.button-wrapper-2048{
+  min-width: 255px;
+}
+
+.main-button-2048{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	margin:auto;
+	font-size: 20px;
+  width: 15px;
+  height: 15px;
+	background-color: #383838;
+	text-decoration: none;
+  padding: 8%;
+  margin: 5px;
+	border: 1px solid rgb(255, 255, 255);
+}
+
+.main-button-2048:hover{
+	background-color: #7c7c7c;
+  cursor: pointer;
+}
+
+.gameover-2048{
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+
+  animation-duration: 1s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+.gameover-button-2048{
+  width: 58%;
+  height: auto;
+  aspect-ratio: 1;
+  opacity: 0.8;
+  max-width: 100px;
+}
+
+.fade-in-2048{
+  animation-duration: 0.8s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: fadeIn-2048;
+}
+
+.move-up-one-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveUpOne-2048;
+}
+
+.move-up-two-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveUpTwo-2048;
+}
+
+.move-up-three-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveUpThree-2048;
+}
+
+.move-down-one-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveDownOne-2048;
+}
+
+.move-down-two-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveDownTwo-2048;
+}
+
+.move-down-three-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveDownThree-2048;
+}
+
+.move-left-one-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveLeftOne-2048;
+}
+
+.move-left-two-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveLeftTwo-2048;
+}
+
+.move-left-three-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveLeftThree-2048;
+}
+
+.move-right-one-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveRightOne-2048;
+}
+
+.move-right-two-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveRightTwo-2048;
+}
+
+.move-right-three-2048{
+  animation-duration: 0.4s;
+  transition-timing-function:ease-in-out;
+  animation-fill-mode: both;
+  animation-name: moveRightThree-2048;
+}
+
+
+
+@keyframes fadeIn-2048 {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+ }
+
+ @keyframes moveUpOne-2048 {
+  0% {
+    transform: translateY(0%);
+  }
+  
+  100% {
+    transform: translateY(-110.5%);
+  }
+ }
+
+ @keyframes moveUpTwo-2048 {
+  0% {
+    transform: translateY(0%);
+  }
+  
+  100% {
+    transform: translateY(-221%);
+  }
+ }
+
+ @keyframes moveUpThree-2048 {
+  0% {
+    transform: translateY(0%);
+  }
+  
+  100% {
+    transform: translateY(-331.5%);
+  }
+ }
+
+ @keyframes moveDownOne-2048 {
+  0% {
+    transform: translateY(0%);
+  }
+  
+  100% {
+    transform: translateY(110.5%);
+  }
+ }
+
+ @keyframes moveDownTwo-2048 {
+  0% {
+    transform: translateY(0%);
+  }
+  
+  100% {
+    transform: translateY(221%);
+  }
+ }
+
+ @keyframes moveDownThree-2048 {
+  0% {
+    transform: translateY(0%);
+  }
+  
+  100% {
+    transform: translateY(331.5%);
+  }
+ }
+
+ @keyframes moveLeftOne-2048 {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  100% {
+    transform: translateX(-108%);
+  }
+ }
+
+ @keyframes moveLeftTwo-2048 {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  100% {
+    transform: translateX(-216%);
+  }
+ }
+
+ @keyframes moveLeftThree-2048 {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  100% {
+    transform: translateX(-324%);
+  }
+ }
+
+ @keyframes moveRightOne-2048 {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  100% {
+    transform: translateX(108%);
+  }
+ }
+
+ @keyframes moveRightTwo-2048 {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  100% {
+    transform: translateX(216%);
+  }
+ }
+
+ @keyframes moveRightThree-2048 {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  100% {
+    transform: translateX(324%);
+  }
+ }
+ 
+
+
+
+
+ @media only screen and (max-width: 550px) {
+  .number-square-2048{
+    font-size: 28px;
+  }
+
+ }
