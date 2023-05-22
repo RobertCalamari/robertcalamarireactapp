@@ -857,10 +857,10 @@ function Clone2048() {
   return (
     <div className="container">
         <Navbar />
-        <div className="content">
+        <div className="content" style={{backgroundImage: 'url('+splashImage+')'}}>
         <div className="left-content">
                 <div className="left-box" style={{height: '84%', maxHeight: '84%'}}>
-                    <div className="main-header" style={{padding:'0 0 31px 0px'}}>2048 Clone</div>
+                    <div className="main-header" style={{padding:'0 0 31px 0px', textAlign:'center'}}>2048 Clone</div>
                     <div className="main-body" style={{display: 'flex', justifyContent: 'center', textAlign: 'center', paddingLeft: '0px'}}>
                     <div className="App-2048">
                       <div className='boards-container-2048'>

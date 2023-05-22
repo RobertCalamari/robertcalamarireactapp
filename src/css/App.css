@@ -302,7 +302,7 @@ body{
   font-family: SFU-UI-Light;
   background-color: transparent;
   background-color: #1f1f1f;
-  text-decoration: none;
+  
   padding: 10px 18px;
   border: 1px solid var(--main-color);
   margin-top: 25px;
@@ -504,6 +504,149 @@ body{
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+.stand-input{
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  max-width: 80%;
+  width: 250px;
+  font-size: 1em;
+  margin: 10px;
+}
+
+.input-button {
+  color: var(--main-color);
+  margin: 10px;
+  height: 44px;
+  width: 160px;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-family: SFU-UI-Light;
+  background-color: transparent;
+  background-color: #1f1f1f;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid var(--main-color);
+  animation-delay: 2s;
+}
+
+.input-button:hover{	
+	background-color: var(--main-color);
+	color: #1f1f1f;
+	cursor: pointer;
+}
+
+.rules-button{
+  text-decoration: none !important;
+  color: var(--main-color);
+  margin: 10px;
+  height: 17px;
+  aspect-ratio: 1;
+  border-radius: 50px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: SFU-UI-Light;
+  background-color: transparent;
+  background-color: #1f1f1f;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 1px solid var(--main-color);
+  animation-delay: 2s;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.set-clickable{
+  pointer-events: all !important;
+	cursor: pointer;
+}
+
+.rules-button:hover{	
+	background-color: var(--main-color);
+	color: #1f1f1f;
+	cursor: pointer;
+}
+
+.hover-red{
+	color: #932020;
+  border: 1px solid #932020;
+}
+
+.hover-red:hover{
+  background-color: #932020;
+	color: #1f1f1f;
+	cursor: pointer;
+}
+
+.hover-blue{
+	color: #1717db;
+  border: 1px solid #20207e;
+}
+
+.hover-blue:hover{
+  background-color: #20207e;
+	color: #1f1f1f;
+	cursor: pointer;
+}
+
+.join-room-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-game-error, .start-game-error{
+  color: red;
+  padding: 10px;
+  opacity: 0;
+  transition-duration: 300ms;
+}
+
+.join-prompt{
+  max-width: 600px;
+  margin-top: 58px;
+  margin-bottom: 58px;
+}
+
+.playerlist-vert{
+  margin: 14px 0px;
+}
+
+.playerlist-player{
+  margin: 4px 7px;
+  transform: translateY(-5px);
+}
+
+.playerlist-player:nth-child(odd) {
+  transform: translateY(5px);
+}
+
+.room-name{
+  font-size: 20px;
+  margin-bottom: 31px;
+}
+
+.show-opacity{
+  opacity: 1;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-column{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items:center
+}
+
 @media only screen and (max-width: 960px) {
   body, html {
     overflow-y: visible;
@@ -565,7 +708,7 @@ body{
   .main-space-even{
     flex-direction: column;
     align-items: center;
-    height: 401px;
+    /* height: 401px; */
     justify-content: space-evenly;
     width: unset !important;
   }
@@ -591,9 +734,19 @@ body{
     height: 85vh;
   }
 
+  .just-for-mobile{
+    display: block !important;
+  }
+
+  .just-for-web{
+    display: none !important;
+  }
+
 }
 
 @media only screen and (max-width: 550px) {
+
+  
 
   .projects-body{
     flex-direction: column;
@@ -666,7 +819,7 @@ body{
   
   .content{
     height: fit-content;
-    margin-bottom: 125px;
+    margin-bottom: 70px;
   }
 
   .home-box{
@@ -754,7 +907,6 @@ body{
   .aboutme-form-scroller-horizontal{
     display: block;
   }
-
   
 }
 

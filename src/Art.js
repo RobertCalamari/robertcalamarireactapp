@@ -206,7 +206,7 @@ function Art(props) {
 
 
     return (
-        <div className="container hideoverflow" style={{height:'100vh'}}>
+        <div className="container hideoverflow painting-container" style={{height:'100vh'}}>
             <Navbar />
             <div className="content" style={{backgroundImage: 'url('+splashImage+')', flexDirection: 'column', width: contentWidth}}>
                 <div className="paintings-page" style={{display: paintingsPageVisible}}>

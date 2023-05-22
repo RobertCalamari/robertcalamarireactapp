@@ -251,7 +251,7 @@
 
 @media only screen and (max-width: 960px) {
 
-    .container{
+    .painting-container{
         height: 100vh !important;
     }
 

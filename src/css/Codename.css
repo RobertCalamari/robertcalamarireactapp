@@ -1,0 +1,236 @@
+.codename-waiting-color{
+    width: 49%;
+    height: 250px;
+}
+
+.start-game{
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: #1f1f1f;
+}
+
+.start-game:hover{
+    border: 1px solid var(--main-color);
+    background-color: #1f1f1f;
+    color: var(--main-color);
+}
+
+.codename-word-container{
+    /* max-width: 1125px; */
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.codename-gameboard{
+    justify-content: space-between;
+}
+
+.word-rect{
+    width: calc(90% / 5);
+    margin: 1%;
+    aspect-ratio: 13/9;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 153, 99);
+    border: solid 6px rgb(236, 193, 144);
+    font-size: 12px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 9px;
+    pointer-events: none;
+}
+
+.codename-blue-side, .codename-red-side{
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.red-container, .blue-container{
+    aspect-ratio: 9/10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 17px 0px;
+    border-radius: 25px;
+}
+
+.red-container, .blue-container{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.red-container{
+    background-color: #932020;
+}
+
+.blue-container{
+    background-color: #20207e;
+}
+
+.team-color{
+    font-size: 15px;
+}
+
+.spymaster-field{
+    margin-left: 0;
+    margin-right: 0;
+    width: 75%;
+}
+
+.spymaster-field-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.spymaster-field-button{
+    width: 77%;
+}
+
+.message-prompt{
+    width: 52%;
+    background-color: #e6e6e6;
+    border-radius: 34px;
+    padding: 4px 13px;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-prompt{
+  display: flex;
+  width: 52%;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0px 6px 0px;
+}
+
+.score-prompt-red, .score-prompt-blue, .score-prompt-turn{
+  padding: 6px 21px;
+  border-radius: 31px;
+  font-weight: 600;
+}
+
+.score-prompt-red{
+  background-color: #932020;
+}
+
+.score-prompt-blue{
+  background-color: #20207e;
+}
+
+.score-prompt-red, .score-prompt-blue{
+  display: none;
+}
+
+.score-prompt-turn{
+  text-transform: uppercase;
+}
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+
+  .codename-word-container {
+    width: 90%;
+  }
+
+  .word-rect {
+    aspect-ratio: 1;
+    font-size: 12px;
+  }
+
+  .codename-blue-side, .codename-red-side {
+    width: 40%;
+  }
+
+  .spymaster-field{
+    width: 30%;
+    margin: 25px 25px 4px 25px;
+  }
+
+  .spymaster-field-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .spymaster-field-button {
+    width: 57%;
+  }
+
+  .playerlist-vert {
+    margin: 14px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    justify-content: center;
+  }
+
+  .playerlist-player:nth-child(2n+1) {
+    transform: translateY(0px);
+  }
+
+  .playerlist-player {
+    margin: 4px 7px;
+    transform: translateY(0px);
+  }
+
+  .codename-header{
+    font-size: 13px !important;
+    padding-top: 2px !important;
+  }
+
+  .team-color {
+    font-size: 12px !important;
+  }
+
+  .red-container, .blue-container {
+    aspect-ratio: 9/13;
+    border-radius: 12px;
+  }
+
+  .center-evenly{
+    justify-content: space-evenly;
+  }
+
+  .add-extra-on-mobile{
+    /* padding-bottom: 130% !important; */
+    margin-bottom: 0 !important;
+    height: 100%;
+  }
+
+  .message-prompt{
+    width: 85%;
+    height: 55px;
+    border-radius: 26px;
+  }
+
+  .score-prompt{
+    width: 85%;
+    justify-content: space-between;
+  }
+
+  .score-prompt-red, .score-prompt-blue{
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .word-rect {
+    aspect-ratio: 1;
+    font-size: 9px;
+  }
+}

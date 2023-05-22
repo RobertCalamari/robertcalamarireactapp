@@ -215,7 +215,7 @@ function Wordle() {
         <div className="content" style={{backgroundImage: 'url('+splashImage+')'}}>
         <div className="left-content">
                 <div className="left-box" style={{height: '84%', maxHeight: '84%', width: '100%'}}>
-                    <div className="main-header" style={{padding:'0 0 31px 0px'}}>Wordle Clone</div>
+                    <div className="main-header" style={{padding:'0 0 31px 0px', textAlign:'center'}}>Wordle Clone</div>
                     <div className="main-body" style={{display: 'flex', justifyContent: 'center', textAlign: 'center', paddingLeft: '0px'}}>
                     <div className="App">
                         Score: {score}

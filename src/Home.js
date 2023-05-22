@@ -38,7 +38,7 @@ function Home(props) {
     return (
         <div className="container">
             <Navbar />
-            <div className="content" style={{backgroundImage: 'url('+splashImage+')', display:'block'}}>
+            <div className="content" style={{backgroundImage: 'url('+splashImage+')', display:'block', overflowY: 'hidden', overflowX: 'hidden', paddingBottom:'119px'}}>
                 <div className="home-box hbox-one" style={{backgroundImage: 'url('+splashImage+')', backgroundRepeat: 'no-repeat'}}>
                     <div className="home-box-sub center" style={{flexDirection:'column', textAlign:'left', position:'relative'}}>
                         <div className="" style={{margin: '0 10% 0 10%'}}>

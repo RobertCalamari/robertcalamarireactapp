@@ -31,8 +31,9 @@ function Projects(props) {
                         <div className="main-body">
                             <div className="main-content projects-content" style={{display:'block' }}>
                                 <ProjectsBox name="Booze Cruise" icon="game" setInfoContentActive={setInfoContentActive} plink="https://old-robertcalamari-node.herokuapp.com/games/boozecruise" info="Booze Cruise is a party drinking game, based off of the phone game 'Picolo'. Players input their names and select categories to get started, then take turns passing and reading the prompts that appear on the screen! Players either have to do whatever it says or take however many sips to not do it!" />
-                                <ProjectsBox name="Wordle Clone" icon="game" setInfoContentActive={setInfoContentActive} plink='/games/wordleclone' info="This is a game inspired by the popular New York Times game 'Wordle'! You have 6 chances to correctly guess the 5 letter word, using clues you get from the previous guess. Green means the letter is in the correct space, while yellow means that you have the correct letter, but in the wrong space." />
-                                <ProjectsBox name="2048 Clone" icon="game" setInfoContentActive={setInfoContentActive} plink='/games/2048clone' info="This is a game inspired by the popular game '2048', where you try to combine the numbers on the board to create the number 2048 or even higher." />
+                                <ProjectsBox name="Wordle Clone" icon="game" setInfoContentActive={setInfoContentActive} plink='wordleclone' info="This is a game inspired by the popular New York Times game 'Wordle'! You have 6 chances to correctly guess the 5 letter word, using clues you get from the previous guess. Green means the letter is in the correct space, while yellow means that you have the correct letter, but in the wrong space." />
+                                <ProjectsBox name="2048 Clone" icon="game" setInfoContentActive={setInfoContentActive} plink='2048clone' info="This is a game inspired by the popular game '2048', where you try to combine the numbers on the board to create the number 2048 or even higher." />
+                                <ProjectsBox name="Code Names Clone" icon="game" setInfoContentActive={setInfoContentActive} plink='codenames' info="This is a game inspired by the popular game 'Code Names', where you try to figure out secret clues as a team, from the code master!" />
                             </div>
                             
 
@@ -52,7 +53,7 @@ function Projects(props) {
                         {infoContentActive[2]}
                     </div>
                     <div className="project-info-container-open">
-                    <NavLink strict="true" to={infoContentActive[1] === "Clocks" || infoContentActive[5] === "clock" ? "/projects/clocks" : "/projects"} onClick={infoContentActive[3]} style={{textDecoration: 'none', width:'100%', color:'white'}}>
+                    <NavLink strict="true" to={infoContentActive[1] === "Clocks" || infoContentActive[5] === "clock" ? "/clocks" : "/projects"} onClick={infoContentActive[3]} style={{textDecoration: 'none', width:'100%', color:'white'}}>
                         Open
                     </NavLink>
                     </div>
